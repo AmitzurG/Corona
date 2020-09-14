@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Corona</string>
+
+    <string name="selectCountry">Select country: </string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="getByCountry">Get By Country</string>
+    <string name="getByMyCountry">Get By my Country</string>
+    <string name="nearbyCorona">Nearby Corona</string>
+    <string name="coronaPersonNearby">Corona infected person is nearby</string>
+    <string name="continu">Continue</string>
+    <string name="confirmed">Confirmed: %1$d</string>
+    <string name="recovered">Recovered: %1$d</string>
+    <string name="deaths">Deaths: %1$d</string>
+</resources>
