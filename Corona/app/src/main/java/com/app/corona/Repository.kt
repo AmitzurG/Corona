@@ -24,9 +24,8 @@ object Repository {
                 var result = 0
                 val coronaObjectList = response.body()
                 if (coronaObjectList != null) {
-                    for (coronaObject in coronaObjectList) {
-                        result += coronaObject.Cases
-                    }
+                    // the cumulative value of the last day minus the cumulative value of the first day give us the required value
+                    result = coronaObjectList.last().Cases - coronaObjectList.first().Cases
                 }
                 // update the result using live data
                 coronaResult.value = result

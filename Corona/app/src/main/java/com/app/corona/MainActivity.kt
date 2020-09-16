@@ -217,6 +217,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     class DatePickerFragment(private val selected: (year: Int, month: Int, day: Int) -> Unit) : DialogFragment(), DatePickerDialog.OnDateSetListener {
+        constructor() : this({_, _, _ -> }) // default constructor, because the system sometimes instantiate the fragment and need a default constructor
+
         override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
             // Use the current date as the default date in the picker
             val c = Calendar.getInstance()
